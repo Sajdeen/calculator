@@ -1,25 +1,25 @@
 const resultDisplay = document.getElementById('result');
 const buttons = document.querySelectorAll('.button');
 
-let currentInput= '';
+let currentInput = '';
 let previousOperand = '';
-let operation = null;
+let operation = null; 
 
 
 //Add event listeners to buttons
 
 buttons.forEach((button) => {
-    button.addEventListener('click', () =>{
+    button.addEventListener('click', () => {
         const value = button.innerText;
 
         //clear all
 
-        if(value ==='AC'){
+        if (value === 'AC') {
             currentInput = '';
-            previousOperand ='';
+            previousOperand = '';
             operation = null;
-            resultDisplay,value = '';
-            
+            resultDisplay, value = '';
+
         }
     });
-});
+});  
