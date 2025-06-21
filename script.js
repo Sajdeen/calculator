@@ -3,12 +3,12 @@ let buttons = document.querySelectorAll (".button");
 let input = document.querySelector("input");
 
 
-buttons.forEach((button) {
+buttons.forEach((button) => {
 button.addEventListener("click", (e) => {
 let value = e.target.innerHTML;
 
  
-if (value === "=");{
+if (value === "="){
   try{
 string = eval(string);
 input.value = string;
@@ -21,6 +21,7 @@ input.value = string;
  input.value = string;
 
 } else if (value === "DEL"){
+  string = string.slice(0, -1);
  input.value = string;
 } else{
   string += value;
